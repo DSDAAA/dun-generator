@@ -1,12 +1,13 @@
 package com.dsdaaa.acm;
 
 import java.util.Scanner
-
+/**
+* ACM输入模板（多数之和）
+* @author yupi
+*/
 public class MainTemplate {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        while (scanner.hasNext()) {
             int n = scanner.nextInt();
 
             int[] arr = new int[n];
@@ -18,9 +19,7 @@ public class MainTemplate {
             for (int num : arr) {
                 sum += num;
             }
-            System.out.println("Sum:" + sum);
-
-        }
-        scanner.close();
+            System.out.println("求和结果：" + sum);
+    scanner.close();
     }
 }
